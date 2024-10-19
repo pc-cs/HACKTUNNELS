@@ -22,7 +22,7 @@ function BuildTimetable() {
     const result = await ServiceAPI.fetchScheduledEvents();
     setScheduledEvents(result);
   };
-
+  
   const createTimetable = async () => {
     const result = await ServiceAPI.createTimetable(
       new Date().toISOString(),
@@ -40,8 +40,18 @@ function BuildTimetable() {
   const removeEvent = (event: ScheduledEvent) => {
     setSelectedEvents(selectedEvents.filter((e) => e.id !== event.id));
   };
+  
+
+
+  <form>
+    <label htmlFor="tname">Table name:</label><br>
+    <input type= "text" id= "tname" name="tname"></input></br>
+  </form>
+
+
+
   return (
-    <Layout title={"My Course Worksheet"}>
+    <Layout title={"My Course Worksheet haha"}>
       <div className="BuildTimetable">
         <Section title="Search">
           <SearchSection onSearch={fetchScheduledEvents} />
