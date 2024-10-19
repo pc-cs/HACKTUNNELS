@@ -41,9 +41,9 @@ function BuildTimetable() {
     setSelectedEvents(selectedEvents.filter((e) => e.id !== event.id));
   };
   return (
-    <Layout title={"My Course Worksheet haha"}>
+    <Layout title={"My Course Worksheet"}>
       <div className="BuildTimetable">
-        <Section title="Search haha">
+        <Section title="Search">
           <SearchSection onSearch={fetchScheduledEvents} />
         </Section>
         {scheduledEvents.length > 0 && (
