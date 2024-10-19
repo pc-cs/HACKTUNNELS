@@ -40,9 +40,9 @@ function BuildTimetable() {
   const removeEvent = (event: ScheduledEvent) => {
     setSelectedEvents(selectedEvents.filter((e) => e.id !== event.id));
   };
-
+  <input type = "Timetable name: "></input>
   return (
-    <Layout title={"My Course Worksheet"}>
+    <Layout title={"My Course Worksheet haha"}>
       <div className="BuildTimetable">
         <Section title="Search">
           <SearchSection onSearch={fetchScheduledEvents} />
